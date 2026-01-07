@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>AWS Static Website Hosting</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        body {
+            margin: 0;
+            font-family: "Segoe UI", Arial, sans-serif;
+            background-color: #0b0f0d;
+            color: #e6f2ec;
+            line-height: 1.6;
+        }
+
+        header {
+            background: linear-gradient(135deg, #0f3d2e, #06261d);
+            padding: 40px 20px;
+            text-align: center;
+            border-bottom: 2px solid #1fa67a;
+        }
+
+        header h1 {
+            margin: 0;
+            color: #1fa67a;
+            font-size: 2.5rem;
+        }
+
+        header p {
+            margin-top: 10px;
+            font-size: 1.1rem;
+            color: #cfe9de;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        section {
+            background-color: #121916;
+            padding: 25px;
+            margin-bottom: 25px;
+            border-radius: 8px;
+            border-left: 4px solid #1fa67a;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+        }
+
+        section h2 {
+            color: #1fa67a;
+            margin-top: 0;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            font-size: 0.9rem;
+            color: #9fbdb1;
+            border-top: 1px solid #1f2e29;
+        }
+
+        footer span {
+            color: #1fa67a;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>🚀 AWS Static Website Hosting</h1>
+    <p>Secure, Scalable & Cost-Effective Hosting using Amazon S3</p>
+</header>
+
+<div class="container">
+
+    <section>
+        <h2>📌 What is a Static Website?</h2>
+        <p>
+            A static website consists of fixed content such as HTML, CSS, and JavaScript files.
+            It does not require a backend server or database. The same content is delivered to
+            every user, making it fast and reliable.
+        </p>
+    </section>
+
+    <section>
+        <h2>☁️ How AWS S3 Static Website Hosting Works</h2>
+        <p>
+            Amazon S3 (Simple Storage Service) allows you to store files in buckets.
+            When static website hosting is enabled:
+        </p>
+        <ul>
+            <li>HTML and CSS files are stored as objects inside an S3 bucket</li>
+            <li>S3 acts as a web server and serves files over HTTP</li>
+            <li>An index document (index.html) is returned by default</li>
+            <li>A bucket policy allows public read access</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>⚙️ Why Use Amazon S3?</h2>
+        <ul>
+            <li>Highly scalable and reliable</li>
+            <li>Very low hosting cost</li>
+            <li>No server management required</li>
+            <li>Integrates with CloudFront for CDN</li>
+            <li>Easy deployment and maintenance</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>🔐 Security & Access</h2>
+        <p>
+            Access to the website is controlled using an S3 bucket policy that allows
+            public read-only access. Write or delete operations are restricted to the
+            bucket owner.
+        </p>
+    </section>
+
+</div>
+
+<footer>
+    <p>Built as part of an <span>AWS Static Website Hosting Project</span></p>
+</footer>
+
+</body>
+</html>
